@@ -15,7 +15,7 @@
 <body>
 
     <header>
-        <h1>Emilio Romero</h1>
+        <h1>Curriculum de Emilio Romero</h1>
         <p><b>Ocupación: </b>Estudiante</p>
         <p><b>Correo: </b>emjorome@espol.edu.ec</p>
         <p><b>Número Celular: </b>0986765837</p>
@@ -29,69 +29,127 @@
             <li><a href="#experiencia">Experiencia</a></li>
             <li><a href="#habilidades">Habilidades</a></li>
             <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contactenos</a></li>
         </ul>
     </nav>
 
     <main>
         <section id="resumen">
-        <h2>Resumen</h2>
-        <p>Programador y estudiante de la Escuela Superior Politécnica del Litoral</p>
+            <h2>Resumen</h2>
+            <p>Programador y estudiante de la Escuela Superior Politécnica del Litoral</p>
         </section>
 
         <section id="experiencia">
-        <h2>Experiencia</h2>
-        <p>Actualmente he realizado proyectos académicos de varias materias, por lo que mi experiencia es básica o intermedia.</p>
+            <h2>Experiencia</h2>
+            <p>Actualmente he realizado proyectos académicos de varias materias, por lo que mi experiencia es básica o
+                intermedia.</p>
         </section>
 
         <section id="educacion">
-        <h2>Educación</h2>
-        <ul>
-            <li><h4>Universidad:</h4> Escuela Superior Politécnica del Litoral</li>
-            <li><h4>Bachillerato:</h4> Unidad Educativa Sadowinski School</li>
-        </ul>
+            <h2>Educación</h2>
+            <ul>
+                <li>
+                    <h4>Universidad:</h4> Escuela Superior Politécnica del Litoral
+                </li>
+                <img src="https://images.squarespace-cdn.com/content/v1/55d9fb0ee4b0dfd798034243/1569324819865-VKFB1UYEP4FC41V2V6G4/ke17ZwdGBToddI8pDm48kBjdT10f9jkmC2TAvx6P1hsUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYy7Mythp_T-mtop-vrsUOmeInPi9iDjx9w8K4ZfjXt2djAKQK5Rk2SlvpIwXmRcQ8UGgDGBNNfEtjDOyNsbznomCjLISwBs8eEdxAxTptZAUg/logo_espol.png"
+                    width="200" height="75"></img>
+                <li>
+                    <h4>Bachillerato:</h4> Unidad Educativa Sadowinski School
+                </li>
+            </ul>
         </section>
 
         <section id="habilidades">
-        <h2>Habilidades</h2>
-        <p>Manejo en:</p>
-        <ul>
-            <li>Python</li>
-            <li>Java</li>
-            <li>MySQL</li>
-            <li>C</li>
-        </ul>
+            <h2>Habilidades</h2>
+            <p>Manejo en:</p>
+            <ul>
+                <li>Python</li>
+                <li>Java</li>
+                <li>MySQL</li>
+                <li>C</li>
+            </ul>
         </section>
-        
-        <section id="proyectos">
-        <h2>Proyectos</h2>
-        <ul>
-            <li><a href="https://github.com/PieroPazmino/Grupo_11.git">Tic Tac Toc</a>
-                <ul>
-                    <li>Un proyecto hecho en Java que simula un juego de tres en rayas con la posibilidad de jugar
-                        contra la IA.
-                    </li>
-                </ul>
-            </li>
 
-            <li><a href="https://github.com/Issac-Maza/POO-P3-G10-Parcial2.git">Quien quiere ser Millonario</a>
-                <ul>
-                    <li>Un proyecto hecho en Java que simula un juego de preguntas como el programa y juego Quien quiere
-                        ser Millonario. 
-                    </li>
-                </ul>
-            </li> 
-        </ul>
+        <section id="proyectos">
+            <h2>Proyectos</h2>
+            <ul>
+                <li><a href="https://github.com/PieroPazmino/Grupo_11.git">Tic Tac Toc</a>
+                    <ul>
+                        <li>Un proyecto hecho en Java que simula un juego de tres en rayas con la posibilidad de jugar
+                            contra la IA.
+                        </li>
+                    </ul>
+                </li>
+
+                <li><a href="https://github.com/Issac-Maza/POO-P3-G10-Parcial2.git">Quien quiere ser Millonario</a>
+                    <ul>
+                        <li>Un proyecto hecho en Java que simula un juego de preguntas como el programa y juego Quien
+                            quiere
+                            ser Millonario.
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Empresa</th>
+                        <th>Puesto</th>
+                        <th>Años de experiencia</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Acme Corporation</td>
+                        <td>Desarrollador web</td>
+                        <td>3</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
-        
+
+        <section id="contacto">
+            <h2>Contactenos</h2>
+            <form>
+                <label for="nombre">Nombre Completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="experiencia">Experiencia Laboral:</label>
+                <textarea id="experiencia" name="experiencia" rows="5" required></textarea>
+
+                <label for="educacion">Educación:</label>
+                <textarea id="educacion" name="educacion" rows="5" required></textarea>
+
+                <label>Habilidades Técnicas:</label>
+                <input type="checkbox" name="habilidades" value="HTML"> HTML
+                <input type="checkbox" name="habilidades" value="Java"> Java
+                <input type="checkbox" name="habilidades" value="Python">
+                Python
+
+                <label for="intereses">Intereses:</label>
+                <select id="intereses" name="intereses">
+                    <option value="desarrollo">Desarrollo Web</option>
+                    <option value="diseno">Diseño Gráfico</option>
+                    <option value="marketing">Marketing Digital</option>
+                </select>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
     </main>
 
     <footer>
         <p>© Emilio Romero - 2024</p>
         <ul>
-            <li><a
-            href="https://www.linkedin.com/in/emjorome">LinkedIn</a></li>
+            <li><a href="https://www.linkedin.com/in/emjorome">LinkedIn</a></li>
             <li><a href="https://github.com/emjorome">GitHub</a></li>
         </ul>
     </footer>
 </body>
+
 </html>
