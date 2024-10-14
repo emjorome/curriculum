@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width,
     initial-scale=1.0">
     <title>Mi Currículum Vitae</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="stylesheets/styles.css">
 
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
         integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
@@ -26,7 +26,7 @@
     </header>
 
     <nav>
-        <h2>Tabla de Contenido</h2>
+        <h2 class="subtitle">Tabla de Contenido</h2>
         <ul>
             <li><a href="#resumen">Resumen</a></li>
             <li><a href="#educacion">Educación</a></li>
@@ -39,24 +39,24 @@
 
     <main>
         <section id="resumen">
-            <h2>Resumen</h2>
+            <h2 class="subtitle">Resumen</h2>
             <p>Programador y estudiante de la Escuela Superior Politécnica del Litoral</p>
         </section>
 
         <section id="experiencia">
-            <h2>Experiencia</h2>
+            <h2 class="subtitle">Experiencia</h2>
             <p>Actualmente he realizado proyectos académicos de varias materias, por lo que mi experiencia es básica o
                 intermedia.</p>
         </section>
 
         <section id="educacion">
-            <h2>Educación</h2>
+            <h2 class="subtitle">Educación</h2>
             <ul>
                 <li>
                     <h4>Universidad:</h4> Escuela Superior Politécnica del Litoral
                 </li>
-                <img src="https://images.squarespace-cdn.com/content/v1/55d9fb0ee4b0dfd798034243/1569324819865-VKFB1UYEP4FC41V2V6G4/ke17ZwdGBToddI8pDm48kBjdT10f9jkmC2TAvx6P1hsUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYy7Mythp_T-mtop-vrsUOmeInPi9iDjx9w8K4ZfjXt2djAKQK5Rk2SlvpIwXmRcQ8UGgDGBNNfEtjDOyNsbznomCjLISwBs8eEdxAxTptZAUg/logo_espol.png"
-                    width="200" height="75"></img>
+                <img id="photo" src="https://images.squarespace-cdn.com/content/v1/55d9fb0ee4b0dfd798034243/1569324819865-VKFB1UYEP4FC41V2V6G4/ke17ZwdGBToddI8pDm48kBjdT10f9jkmC2TAvx6P1hsUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYy7Mythp_T-mtop-vrsUOmeInPi9iDjx9w8K4ZfjXt2djAKQK5Rk2SlvpIwXmRcQ8UGgDGBNNfEtjDOyNsbznomCjLISwBs8eEdxAxTptZAUg/logo_espol.png"
+                    width="200" height="75" alt="photo"></img>
                 <div id="map" style="height: 400px;"></div>
                 <script>
                     var map = L.map('map').setView([-2.183333, -79.916667], 13);
@@ -80,7 +80,7 @@
         </section>
 
         <section id="habilidades">
-            <h2>Habilidades</h2>
+            <h2 class="subtitle">Habilidades</h2>
             <p>Manejo en:</p>
             <ul>
                 <li>Python</li>
@@ -91,7 +91,7 @@
         </section>
 
         <section id="proyectos">
-            <h2>Proyectos</h2>
+            <h2 class="subtitle">Proyectos</h2>
             <ul>
                 <li><a href="https://github.com/PieroPazmino/Grupo_11.git">Tic Tac Toc</a>
                     <ul>
@@ -138,7 +138,7 @@
         </section>
 
         <section id="contacto">
-            <h2>Contactenos</h2>
+            <h2 class="subtitle">Contactenos</h2>
             <form>
                 <label for="nombre">Nombre Completo:</label>
                 <input type="text" id="nombre" name="nombre" required>
@@ -153,10 +153,9 @@
                 <textarea id="educacion" name="educacion" rows="5" required></textarea>
 
                 <label>Habilidades Técnicas:</label>
-                <input type="checkbox" name="habilidades" value="HTML"> HTML
-                <input type="checkbox" name="habilidades" value="Java"> Java
-                <input type="checkbox" name="habilidades" value="Python">
-                Python
+                <div><input type="checkbox" name="habilidades" value="HTML"> <span>HTML</span></div>
+                <div><input type="checkbox" name="habilidades" value="Java"> <span>Java</span></div>
+                <div><input type="checkbox" name="habilidades" value="Python"> <span>Python</span></div>
 
                 <label for="intereses">Intereses:</label>
                 <select id="intereses" name="intereses">
