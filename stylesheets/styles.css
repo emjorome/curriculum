@@ -1,8 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
 * {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 200;
 }
 
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    cursor: crosshair;
+}
+
+li {
+    list-style-type: none;
+}
+
+nav ul {
+
+    /* Modelo de diseño flexible */
+    display: flex;									
+    justify-content: space-around;
+   
+}
+
+section form {
+
+    /* Modelo de diseño en cuadrícula */
+    display: grid;									
+    row-gap: 0.5rem;
+
+}
+
+/*#resumen {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    height: 24vh;
+    flex-wrap: wrap;
+}
+
+#resumen h2, #resumen p {
+    width: 50%;
+}
+
+#resumen img {
+    max-width: 50%;
+}*/
+
+#resumen {
+    display: grid;
+    justify-content: space-around;
+    align-items: stretch;
+    grid-template-areas: "A D" 
+                         "B D";
+}
+
+#resumen h2 {
+    grid-area: A;
+}
+
+#resumen p {
+    grid-area: B;
+}
+
+#resumen img {
+    grid-area: D;
+}
+
+footer ul {
+    /*display: inline-block; /* Esto permite centrar el <ul> */
+    /*text-align: center; /* Centra el texto dentro de <ul> */
+    list-style-type: none;
+    margin: 0 auto; /* Centro horizontalmente */
+    padding: 0; /* Elimina el padding si es necesario */
+    /*display: block; /* Asegúrate de que se comporte como un bloque */
+    text-align: center;
+    width: fit-content; /* O ajusta el ancho según tus necesidades */
+}
 
 h1 {
     color: red;
