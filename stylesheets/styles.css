@@ -7,6 +7,19 @@
 
 * {
     font-family: 'Poppins', sans-serif;
+    background-color: blanchedalmond;
+}
+
+h1{
+    background-color: rgb(192, 142, 167);
+}
+
+.info p {
+    background-color: rgb(182, 138, 223);
+}
+
+ul li a {
+    background-color: aquamarine;
 }
 
 a {
