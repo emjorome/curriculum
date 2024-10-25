@@ -20,27 +20,29 @@
 
     <header>
         <h1>Curriculum de Emilio Romero</h1>
-        <p><b>Ocupación: </b>Estudiante</p>
-        <p><b>Correo: </b>emjorome@espol.edu.ec</p>
-        <p><b>Número Celular: </b>0986765837</p>
+        <nav class="cabeza">
+            <p><b>Ocupación: </b>Estudiante</p>
+            <p><b>Correo: </b>emjorome@espol.edu.ec</p>
+            <p><b>Número Celular: </b>0986765837</p>
+        </nav>
     </header>
 
     <nav>
         <h2 class="subtitle">Tabla de Contenido</h2>
         <ul>
-            <li><a href="#resumen">Resumen</a></li>
-            <li><a href="#educacion">Educación</a></li>
-            <li><a href="#experiencia">Experiencia</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
-            <li><a href="#proyectos">Proyectos</a></li>
-            <li><a href="#contacto">Contactenos</a></li>
+            <li><a href="#resumen" id="casilla">Resumen</a></li>
+            <li><a href="#educacion" id="casilla">Educación</a></li>
+            <li><a href="#experiencia" id="casilla">Experiencia</a></li>
+            <li><a href="#habilidades" id="casilla">Habilidades</a></li>
+            <li><a href="#proyectos" id="casilla">Proyectos</a></li>
+            <li><a href="#contacto" id="casilla">Contactenos</a></li>
         </ul>
     </nav>
 
     <main>
         <section id="resumen">
             <h2 class="subtitle">Resumen</h2>
-            <p>Programador y estudiante de la Escuela Superior Politécnica del Litoral</p>
+            <p>Programador y estudiante de la Escuela Superior Politécnica del Litoral.</p>
             <img id="photo" src="https://placehold.co/300x200" alt="Placeholder de imagen">
         </section>
 
@@ -54,7 +56,7 @@
             <h2 class="subtitle">Educación</h2>
             <ul>
                 <li>
-                    <h4>Universidad:</h4> Escuela Superior Politécnica del Litoral
+                    <h4><b>Universidad:</b></h4> Escuela Superior Politécnica del Litoral
                 </li>
                 <img id="photo"
                     src="https://images.squarespace-cdn.com/content/v1/55d9fb0ee4b0dfd798034243/1569324819865-VKFB1UYEP4FC41V2V6G4/ke17ZwdGBToddI8pDm48kBjdT10f9jkmC2TAvx6P1hsUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYy7Mythp_T-mtop-vrsUOmeInPi9iDjx9w8K4ZfjXt2djAKQK5Rk2SlvpIwXmRcQ8UGgDGBNNfEtjDOyNsbznomCjLISwBs8eEdxAxTptZAUg/logo_espol.png"
@@ -62,17 +64,6 @@
                 <div id="map" style="height: 400px;"></div>
                 <script>
                     var map = L.map('map').setView([-2.183333, -79.916667], 13);
-
-                    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                    }).addTo(map);
-                </script>
-                <li>
-                    <h4>Bachillerato:</h4> Unidad Educativa Sadowinski School
-                </li>
-                <div id="map2" style="height: 400px;"></div>
-                <script>
-                    var map = L.map('map2').setView([-2.183333, -79.916667], 13);
 
                     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
                         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
