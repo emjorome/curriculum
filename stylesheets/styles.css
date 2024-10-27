@@ -10,16 +10,35 @@
     background-color: rgb(182, 180, 180);
 }
 
-h2 {
+h2, h3{
     color: red;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    /*font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;*/
 }  
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 20px;
+}
 .info p {
     background-color: rgb(163, 212, 224);
 }
 
-#casilla, ul li .opciones {
-    background-color:aquamarine;
+#casilla, .opciones {
+    background-color:rgb(124, 122, 122);
 }
 
 a {
@@ -51,7 +70,7 @@ section form {
 
 }
 
-#resumen {
+#resumen, #experiencia{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -60,12 +79,31 @@ section form {
     flex-wrap: wrap;
 }
 
-#resumen h2, #resumen p {
+#resumen h2, #resumen p, #experiencia h2, #experiencia p {
     width: 50%;
 }
 
-#resumen img {
+#resumen img, #experiencia img{
     max-width: 50%;
+}
+
+.skills-table {
+    margin: 0 auto;
+    margin-top: 20px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.skills-table th {
+    background-color: #435ca0;
+    color: white;
+    padding: 10px;
+}
+
+.skills-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
 }
 
 #habilidades {
@@ -113,7 +151,8 @@ section form {
     grid-area: H;
 }
 
-/*#resumen {
+#proyectos ul li, video {
+    margin-top: 20px;
     display: grid;
     justify-content: space-around;
     align-items: stretch;
@@ -121,17 +160,17 @@ section form {
                          "B D";
 }
 
-#resumen h2 {
+#proyectos a {
     grid-area: A;
 }
 
-#resumen p {
+#proyectos ul li ul li {
     grid-area: B;
 }
 
-#resumen img {
+#proyectos video {
     grid-area: D;
-}*/
+}
 
 footer ul {
     /*display: inline-block; /* Esto permite centrar el <ul> */
@@ -148,6 +187,10 @@ h1 {
     color: red;
     text-align: center;
     font-weight: bold;
+    background-color: rgb(45, 73, 143);
+}
+
+.info {
     background-color: rgb(45, 73, 143);
 }
 
