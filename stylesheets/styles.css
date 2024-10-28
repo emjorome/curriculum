@@ -156,7 +156,7 @@ section form {
     grid-area: H;
 }
 
-#proyectos ul li, video {
+#game_tictactoc, #game_millonary {
     margin-top: 20px;
     display: grid;
     justify-content: space-around;
@@ -165,15 +165,15 @@ section form {
                          "B D";
 }
 
-#proyectos a {
+#game_tictactoc a, #game_millonary a {
     grid-area: A;
 }
 
-#proyectos ul li ul li {
+#game_tictactoc li ul li, #game_millonary li ul li {
     grid-area: B;
 }
 
-#proyectos video {
+#game_tictactoc video, #game_millonary video {
     grid-area: D;
 }
 
